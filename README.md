@@ -2,9 +2,9 @@
 
 ### Node.js is a simple and powerful tool for backend development. When combined with Express, you can create lightweight, fast, scalable APIs quickly. 
 
-##### This app gives an example of a REST application on [HATEOAS Architecture](https://spring.io/understanding/HATEOAS) using Node, Express and MongoDB.
+#### This app gives an example of a REST application on [HATEOAS Architecture](https://spring.io/understanding/HATEOAS) using Node, Express and MongoDB.
 
-##### Tools/package used
+#### Tools/package used
 - Node as a backend runtime
 - Express for backend routing
 - MongoDB for application data storage
