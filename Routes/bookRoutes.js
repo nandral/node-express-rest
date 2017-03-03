@@ -36,6 +36,9 @@ var routes = function(Book){
             var authorLink = 'http://' + req.headers.host + '/api/books/?author=' + returnBook.author;
             returnBook.links.allBooksByThisAuthor = authorLink.replace(' ', '%20');
 
+            var allLink = 'http://' + req.headers.host + '/api/books/';
+            returnBook.links.allBooks = allLink.replace(' ', '%20');
+
             res.json(returnBook);
 
         })
