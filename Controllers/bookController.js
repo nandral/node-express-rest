@@ -22,6 +22,10 @@ var bookController = function(Book){
         {
             query.genre = req.query.genre;
         }
+         if(req.query.author)
+        {
+            query.author = req.query.author;
+        }
         Book.find(query, function(err,books){
 
             if(err)

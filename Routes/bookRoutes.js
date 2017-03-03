@@ -30,8 +30,12 @@ var routes = function(Book){
             var returnBook = req.book.toJSON();
 
             returnBook.links = {};
-            var newLink = 'http://' + req.headers.host + '/api/books/?genre=' + returnBook.genre;
-            returnBook.links.FilterByThisGenre = newLink.replace(' ', '%20');
+            var genreLink = 'http://' + req.headers.host + '/api/books/?genre=' + returnBook.genre;
+            returnBook.links.allBooksInThisGenre = genreLink.replace(' ', '%20');
+
+            var authorLink = 'http://' + req.headers.host + '/api/books/?author=' + returnBook.author;
+            returnBook.links.allBooksByThisAuthor = authorLink.replace(' ', '%20');
+
             res.json(returnBook);
 
         })
